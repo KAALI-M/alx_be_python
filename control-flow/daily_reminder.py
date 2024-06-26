@@ -13,7 +13,7 @@ match priority :
         msg= "the priority is anknown"
 
 if Time_bound == "yes" :
-    print("Reminder : '" + msg + " tasthat requires immediate attention today!")
+    print("Reminder: '" + msg + " tasthat requires immediate attention today!")
 else :
-   print("Note : '" +msg+ ". Consider completing it when you have free time.")
+   print("Note: '" +msg+ ". Consider completing it when you have free time.")
 
