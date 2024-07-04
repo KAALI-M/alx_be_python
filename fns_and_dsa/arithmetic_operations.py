@@ -1,10 +1,10 @@
-def perform_operation(x,y,z):
+def perform_operation(num1,num2,operation):
     r = 0
     match z : 
-        case "add" : r= x+y
-        case "subtract" : r= x-y
-        case "multiply" : r= x*y
-        case "divide" : r= x/y
+        case "add" : r= num1+num2
+        case "subtract" : r= num1-num2
+        case "multiply" : r= num1*num2
+        case "divide" : r= num1/num2
     return r
 
 print( perform_operation(4,5,"add"))
