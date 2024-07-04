@@ -8,7 +8,7 @@ def calculate_future_date(n,datenow=datetime.now()):
     future_date = datenow + timedelta(days=n)
     return future_date
 
-print(f"Current date and time: {display_current_datetime().strftime("%x %X")}")
+print(f"Current date and time: {display_current_datetime().strftime("%Y-%m-%d %H:%M:%S")}")
 number_of_days = int(input("enter a number of daysEnter the number of days to add to the current date: "))
 print(f"Future date: {calculate_future_date(number_of_days,display_current_datetime()).strftime("%d-%m-%Y")}")
 
