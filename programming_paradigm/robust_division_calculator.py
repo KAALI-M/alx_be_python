@@ -1,6 +1,6 @@
 def safe_divide(numerator, denominator):
   try:
-    if isinstance(numerator,(int,float)) or tisinstance(denominator,(int,float)) :
+    if isinstance(numerator,(int,float))=false or tisinstance(denominator,(int,float))=false :
       raise ValueError("errorNonNumeric")
     res = float(numerator)/float(denominator)
     print(f"The result of the division is {res:.1f}")
