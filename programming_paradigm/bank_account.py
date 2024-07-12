@@ -1,16 +1,19 @@
 class BankAccount:
-    def __init__(self,account_balance=0 ):
-        self.account_balance=account_balance
+    def __init__(self, initial_balance=0):
+        self.__account_balance = initial_balance
+
     def deposit(self, amount):
-        self.account_balance += amount
-        print(f"Deposited: ${amount}")
+        if amount > 0:
+            self.__account_balance += amount
+
     def withdraw(self, amount):
-        if self.account_balance >= amount :
-            self.account_balance -= amount
-            print(f"Withdrew: ${amount}")
+        if 0 < amount <= self.__account_balance:
+            self.__account_balance -= amount
             return True
-        else:
-            print (f"Insufficient funds.")
-            return False
+        return False
+
     def display_balance(self):
-        print("Current Balance: ${self.account_balance:.2f}")
+        print(f"Current Balance: ${self.__account_balance:.2f}")
+
+    def get_balance(self):
+        return self.__account_balance
