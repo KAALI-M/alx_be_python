@@ -9,5 +9,5 @@ def safe_divide(numerator, denominator):
   except ValueError as e:
     if str(e)=="errorNonNumeric" : 
       print("Error: Please enter numeric values only.")
-    else
+    else:
       print("erro:r: ",e)
