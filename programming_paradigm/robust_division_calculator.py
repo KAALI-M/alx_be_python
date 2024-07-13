@@ -1,15 +1,13 @@
+
 def safe_divide(numerator, denominator):
-  try:
-    if isinstance(numerator,(int,float))==False or isinstance(denominator,(int,float))==False :
-      raise ValueError("errorNonNumeric")
-    res = float(numerator)/float(denominator)
-    return (f"The result of the division is {res:.1f}")
+    try:
+        num = float(numerator)
+        den = float(denominator)
 
-  except ValueError as e:
-    if str(e)=="errorNonNumeric" : 
-      return ("Error: Please enter numeric values only.")
-    else:
-      return ("erro:r: ",e)
-  except ZeroDivisionError:
-    return("Error: Cannot divide by zero.")  
-
+        result = num / den
+        return f"The result of the division is {result:.1f}"
+    
+    except ZeroDivisionError:
+        return 'Error: Cannot divide by zero.'
+    except ValueError:
+        return 'Error: Please enter numeric values only.'
