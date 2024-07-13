@@ -13,4 +13,3 @@ def safe_divide(numerator, denominator):
   except ZeroDivisionError:
     return("Error: Cannot divide by zero.")  
 
-print(safe_divide(10.1,10.1))
