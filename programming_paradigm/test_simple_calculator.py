@@ -8,8 +8,8 @@ class TestSimpleCalculator(unittest.TestCase):
     def test_addition(self):
          self.assertEqual(self.calc.add(1, -2), -1, f"test of add(1, -2) was not successful: got {self.cal.add(1, -2)}")
 
-    def test_subtract(self):
-        self.assertEqual(self.cal.subtract(4, 5), -1, f"test of subtract(4, 5) was not successful: got {self.cal.subtract(4, 5)}")
+    def test_subtraction(self):
+         self.assertEqual(self.calc.subtract(4, 5), -1, f"test of subtract(4, 5) was not successful: got {self.cal.subtract(4, 5)}")
 
     def test_multiply(self):
         self.assertEqual(self.cal.multiply(4, 5), 20, f"test of multiply(4, 5) was not successful: got {self.cal.multiply(4, 5)}")
