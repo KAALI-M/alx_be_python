@@ -5,7 +5,7 @@ class TestSimpleCalculator(unittest.TestCase):
     def setUp(self):
         self.cal = SimpleCalculator()
 
-    def test_add(self):
+    def test_addition(self):
         self.assertEqual(self.cal.add(1, -2), -1, f"test of add(1, -2) was not successful: got {self.cal.add(1, -2)}")
 
     def test_subtract(self):
