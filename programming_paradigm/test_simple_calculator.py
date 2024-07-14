@@ -14,8 +14,8 @@ class TestSimpleCalculator(unittest.TestCase):
     def test_multiplication(self):
          self.assertEqual(self.calc.multiply(4, 5), 20, f"test of multiply(4, 5) was not successful: got {self.cal.multiply(4, 5)}")
 
-    def test_divide(self):
-        self.assertEqual(self.cal.divide(20, 5), 4, f"test of divide(20, 5) was not successful: got {self.cal.divide(20, 5)}")
+    def test_division(self)(self):
+         self.assertEqual(self.calc.divide(self.cal.divide(20, 5), 4, f"test of divide(20, 5) was not successful: got {self.cal.divide(20, 5)}")
     
     def test_divide_by_zero(self):
         self.assertIsNone(self.cal.divide(20, 0), "Division by zero should return None")
