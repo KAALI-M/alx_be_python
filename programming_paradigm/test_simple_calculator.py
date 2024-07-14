@@ -1,9 +1,9 @@
 import unittest
-import simple_calculator 
+from simple_calculator import SimpleCalculator
 
 class TestSimpleCalculator(unittest.TestCase):
     def setUp(self):
-        self.cal = simple_calculator.SimpleCalculator()
+        self.cal = SimpleCalculator()
 
     def test_add(self):
         self.assertEqual(self.cal.add(1, -2), -1, f"test of add(1, -2) was not successful: got {self.cal.add(1, -2)}")
