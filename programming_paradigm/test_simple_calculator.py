@@ -11,8 +11,8 @@ class TestSimpleCalculator(unittest.TestCase):
     def test_subtraction(self):
          self.assertEqual(self.calc.subtract(4, 5), -1, f"test of subtract(4, 5) was not successful: got {self.cal.subtract(4, 5)}")
 
-    def test_multiply(self):
-        self.assertEqual(self.cal.multiply(4, 5), 20, f"test of multiply(4, 5) was not successful: got {self.cal.multiply(4, 5)}")
+    def test_multiplication(self):
+         self.assertEqual(self.calc.multiply(4, 5), 20, f"test of multiply(4, 5) was not successful: got {self.cal.multiply(4, 5)}")
 
     def test_divide(self):
         self.assertEqual(self.cal.divide(20, 5), 4, f"test of divide(20, 5) was not successful: got {self.cal.divide(20, 5)}")
