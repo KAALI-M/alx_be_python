@@ -3,16 +3,16 @@ class Book:
         self.title = title
         self.author = author
         self._is_checked = False
-    def unavailable(self):
+    def check_out_book(self):
         self._is_checked = True
-    def available(self):
+    def return_book(self):
         self._is_checked = False
     def availability(self):
         return not(self._is_checked)
 
 class Library:
     def __init__(self):
-        self._books: list[Book] = []
+        self._books = []
     def add_book(self,book):
         self._books.append(book)
 
@@ -27,7 +27,7 @@ class Library:
         if index == None:
             return None
         else:
-            self._books[index].unavailable()
+            self._books[index].check_out_book()
             return index
        
     def return_book(self,title):
@@ -35,7 +35,7 @@ class Library:
         if index == None:
             return None
         else: #the book is available
-            self._books[index].available()
+            self._books[index].return_book()
             return index
     def list_available_books(self):
         for bk in self._books:
