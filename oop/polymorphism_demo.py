@@ -17,6 +17,6 @@ class Circle(Shape):
     def area(self):
         return math.pi*(self.radius** 2)
     
-rec=Rectangle(100,100)
-cir=Circle(100)
-print (f" rectangle {rec.area()}, circle {cir.area()}")
+#rec=Rectangle(100,100)
+#cir=Circle(100)
+#print (f" rectangle {rec.area()}, circle {cir.area()}")
